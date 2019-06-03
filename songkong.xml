@@ -11,8 +11,8 @@
   <Project>http://www.jthink.net/songkong</Project>
   <Overview>Official SongKong Docker repository, Identify your songs and add metadata and artwork automatically</Overview>
   <Category>MediaApp:Music</Category>
-  <WebUI>http://tower:4567</WebUI>
-  <TemplateURL/>
+  <WebUI>http://[IP]:[PORT:4567]/</WebUI>
+  <TemplateURL>https://github.com/ijabz/songkong_unraid/raw/master/songkong.xml</TemplateURL>
   <Icon>http://www.jthink.net/songkong/images/songkong_icon256.png</Icon>
   <ExtraParams/>
   <PostArgs/>
