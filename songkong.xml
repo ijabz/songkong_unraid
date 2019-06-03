@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1559585470</DateInstalled>
+  <DateInstalled>1559592491</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>Official SongKong Docker repository, Identify your songs and add metadata and artwork automatically</Description>
@@ -37,9 +37,15 @@
       <ContainerDir>/music</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/songkong</HostDir>
+      <ContainerDir>/songkong</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
   <Environment/>
   <Labels/>
   <Config Name="Port" Target="4567" Default="" Mode="tcp" Description="Container Port: 4567" Type="Port" Display="always" Required="false" Mask="false">4567</Config>
   <Config Name="Music" Target="/music" Default="" Mode="rw" Description="Container Path: /music" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/music</Config>
+  <Config Name="SongKong Config" Target="/songkong" Default="" Mode="rw" Description="Container Path: /songkong" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/songkong</Config>
 </Container>
